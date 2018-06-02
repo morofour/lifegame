@@ -5,7 +5,7 @@
 
 GameField::GameField() {
 	FILE * pFile;
-	fopen_s(&pFile, "FieldInitialState.txt", "r");
+	fopen_s(&pFile, "..\\LifeGame\\FieldInitialState.txt", "r");
 
 	for (int i = 0; i < ARRAY_SIZE; i++) {
 		for (int j = 0; j < ARRAY_SIZE; j++) {
@@ -15,7 +15,7 @@ GameField::GameField() {
 
 	fclose(pFile);
 
-	fopen_s(&pFile, "FieldNextState.txt", "r");
+	fopen_s(&pFile, "..\\LifeGame\\FieldNextState.txt", "r");
 
 	for (int i = 0; i < ARRAY_SIZE; i++) {
 		for (int j = 0; j < ARRAY_SIZE; j++) {
